@@ -2,7 +2,7 @@
     "Project": "2D Dataset Generator",
     "Author": "Svetlana Andrusenko",
     "Email": "283721@uis.no",
-    "Created On": "2025-02-02 15:09:36",
+    "Created On": "2025-02-02 15:16:15",
     "Description": "This project generates and visualizes synthetic datasets using a quadratic function with noise and random uniform distribution.",
     "Data Details": {
         "Quadratic Data": {
