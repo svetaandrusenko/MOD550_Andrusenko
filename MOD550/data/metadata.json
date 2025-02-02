@@ -2,19 +2,19 @@
     "Project": "2D Dataset Generator",
     "Author": "Svetlana Andrusenko",
     "Email": "283721@uis.no",
-    "Created On": "2025-02-02 14:28:15",
+    "Created On": "2025-02-02 15:09:36",
     "Description": "This project generates and visualizes synthetic datasets using a quadratic function with noise and random uniform distribution.",
     "Data Details": {
         "Quadratic Data": {
             "Points": 100,
             "Equation": "y = 1 * x^2 + 2 + noise",
             "Noise Mean": 16,
-            "Noise Std": 200
+            "Noise Std": 100
         },
         "Random Data": {
             "Points": 100,
             "X Range": "[-20, 20]",
-            "Y Range": "[-100, 100]"
+            "Y Range": "[-500, 500]"
         },
         "Final Dataset": {
             "Initial Shape": [
