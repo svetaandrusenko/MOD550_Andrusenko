@@ -85,7 +85,7 @@ class Dataset:
             np.ndarray: A 2D array containing random x and y values.
         """
         x = np.random.randint(-20, 21, size = (self.points, 1))
-        y = np.random.randint(-500, 500, size = (self.points, 1))
+        y = np.random.randint(-500, 501, size = (self.points, 1))
 
         self.random_data = np.hstack((x, y))
         #print(f"Random dataset shape:{self.random_data.shape}")
