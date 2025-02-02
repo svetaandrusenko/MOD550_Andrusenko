@@ -85,7 +85,7 @@ class Dataset:
             np.ndarray: A 2D array containing random x and y values.
         """
         x = np.random.randint(-20, 21, size = (self.points, 1))
-        y = np.random.randint(-100, 100, size = (self.points, 1))
+        y = np.random.randint(-500, 500, size = (self.points, 1))
 
         self.random_data = np.hstack((x, y))
         #print(f"Random dataset shape:{self.random_data.shape}")
@@ -125,10 +125,11 @@ class Dataset:
             new_data = self.data[half_index:, :]
 
             plt.figure()
-            plt.scatter(new_data[:, 0], new_data[:, -1], color = 'green')
-            plt.scatter(original_data[:, 0], original_data[:, -1], color = 'green')
+            plt.scatter(new_data[:, 0], new_data[:, -1], color = "green", label = "Original data")
+            plt.scatter(original_data[:, 0], original_data[:, -1], color = "blue", label = "Added data")
             plt.xlabel("x")
             plt.ylabel("y")
+            plt.legend()
             plt.title("Final dataset")
             plt.grid()
 
@@ -161,7 +162,7 @@ class Dataset:
                 "Random Data": {
                     "Points": self.points,
                     "X Range": "[-20, 20]",
-                    "Y Range": "[-100, 100]"
+                    "Y Range": "[-500, 500]"
                 },
                 "Final Dataset": {
                     "Initial Shape": self.initial_shape,
@@ -183,7 +184,7 @@ class Dataset:
         print(f"Metadata saved as {filename}")
 
 
-dataset = Dataset(100, 1, 2, 16, 200)
+dataset = Dataset(100, 1, 2, 16, 100)
 dataset.data_noise_around_function(plot = True)
 dataset.random_data_uniform()
 dataset.add_data(plot = True)
