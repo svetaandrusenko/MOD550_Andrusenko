@@ -1,0 +1,51 @@
+{
+    "title": "Auto Dataset",
+    "source": "An Introduction to Statistical Learning",
+    "description": "This dataset contains information on various car models, including attributes such as horsepower, weight, acceleration, and fuel efficiency (mpg). It is commonly used for statistical learning and regression analysis.",
+    "file_name": "Auto.csv",
+    "file_type": "CSV",
+    "size": "18 KB",
+    "columns": [
+        {
+            "name": "mpg",
+            "description": "Miles per gallon"
+        },
+        {
+            "name": "cylinders",
+            "description": "Number of cylinders"
+        },
+        {
+            "name": "displacement",
+            "description": "Engine displacement in cubic inches"
+        },
+        {
+            "name": "horsepower",
+            "description": "Engine power"
+        },
+        {
+            "name": "weight",
+            "description": "Weight in lbs"
+        },
+        {
+            "name": "acceleration",
+            "description": "Time to accelerate from 0 to 60 mph"
+        },
+        {
+            "name": "year",
+            "description": "Year of manufacture"
+        },
+        {
+            "name": "origin",
+            "description": "Region of manufacture"
+        },
+        {
+            "name": "name",
+            "description": "Car model name"
+        }
+    ],
+    "source_usage": "Used for teaching statistical learning, regression, and data analysis techniques.",
+    "license": "Educational use, refer to the book for specific licensing details.",
+    "author": "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",
+    "publication_year": "2013",
+    "source_url": "https://www.statlearning.com/resources-second-edition"
+}

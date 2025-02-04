@@ -1,0 +1,35 @@
+{
+    "source": "Imported dataset from student Urszula Starowicz",
+    "original_metadata": {
+        "assignment": "Dataset Generation",
+        "author": {
+            "name": "Urszula Starowicz",
+            "email": "283591@uis.no",
+            "github": "SaiPieGiera"
+        },
+        "description": "This dataset consists of two randomly generated datasets combined together.",
+        "parameters": {
+            "num_points": 200,
+            "noise_level": 16
+        },
+        "dataset_details": {
+            "total_points": 400,
+            "dataset_1_points": 200,
+            "dataset_2_points": 200,
+            "mean_values": [
+                0.4975,
+                0.5166
+            ],
+            "std_dev_values": [
+                0.2891,
+                0.2959
+            ]
+        }
+    },
+    "analysis": {
+        "correlation": 0.0839,
+        "distribution": "Both X and Y appear uniformly distributed with added noise.",
+        "assumed_truth": "No meaningful relationship exists between X and Y. The dataset is random."
+    },
+    "conclusion": "This dataset is suitable for testing random data behavior but not for regression tasks."
+}

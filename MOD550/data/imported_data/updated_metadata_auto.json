@@ -1,0 +1,43 @@
+{
+    "title": "Auto Dataset",
+    "source": "An Introduction to Statistical Learning",
+    "description": "This dataset contains information on various car models, including attributes such as horsepower, weight, acceleration, and fuel efficiency (mpg). It is commonly used for statistical learning and regression analysis.",
+    "file_name": "Auto.csv",
+    "file_type": "CSV",
+    "size": "18 KB",
+    "columns": [
+        {
+            "name": "mpg",
+            "description": "Miles per gallon (fuel efficiency in the original dataset)"
+        },
+        {
+            "name": "horsepower",
+            "description": "Engine power (used in regression analysis)"
+        },
+        {
+            "name": "km_per_liter",
+            "description": "Fuel efficiency converted to kilometers per liter"
+        }
+    ],
+    "source_usage": "Used for teaching statistical learning, regression, and data analysis techniques.",
+    "license": "Educational use, refer to the book for specific licensing details.",
+    "author": "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",
+    "publication_year": "2013",
+    "source_url": "https://www.statlearning.com/resources-second-edition",
+    "analysis": {
+        "objective": "Predicting fuel efficiency (km/L) based on engine power (horsepower).",
+        "regression_type": "Quadratic Regression",
+        "model_formula": "km_per_liter = beta0 + beta1 * horsepower + beta2 * horsepower^2",
+        "coefficients": {
+            "beta0": 24.19073598775511,
+            "beta1": -0.1981977240343373,
+            "beta2": 0.0005231550400274254
+        },
+        "mse": 3.431448013320821,
+        "assumptions": [
+            "Fuel efficiency decreases as engine power increases (negative beta1).",
+            "The quadratic term (beta2) slightly compensates for the decrease at higher horsepower levels."
+        ],
+        "conclusion": "The dataset supports a quadratic relationship between fuel efficiency and engine power with a Mean Squared Error (MSE) of 3.43."
+    }
+}
