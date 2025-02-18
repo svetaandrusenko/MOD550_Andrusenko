@@ -1,0 +1,5 @@
+{
+    "Title": "Forced Oscillations with Noise",
+    "Author": "Svetlana Andrusenko",
+    "Description": "The forced oscillations with a force oscillating at frequency Omega, obtained from the equation: mx'' + kx = F0 cos(Omega*t), with initial conditions at the equilibrium position: x(0)=0, x'(0)=0. Parameters: F0=10, m=0.5, k=80, Omega=12. Noise is Gaussian with mean=0 and std=0.15. Number of points: 500"
+}
